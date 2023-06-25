@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: "Noto sans TC", sans-serif;
+  letter-spacing: 1px;
+  color: #333;
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1920px){ 
+  .modal {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: #C1B494;
+  }
+  
+  .header-content {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-nav {
+    width: 530px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .header-nav > .active {
+    border-bottom: 1px #FFFF solid;
+  }
+  
+  .link-text {
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: #FFFF;
+  }
+  
+  .link-text:hover {
+    border-bottom: 1px #FFFF solid;
+  }
+
+  .close-btn {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+  }
+  
+  .close-btn > img {
+    width: 50px;
+  }
+
+  .prod-content {
+    width: 90%;
+    margin: auto;
+    height: 520px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .img-section {
+    background-color: #6CB3AF;
+    padding: 0px 3%;
+  }
+
+  .tab {
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+  }
+
+  .tab-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 0;
+    padding-left: 20px;
+    list-style-position: inside;
+  }
+
+  .tab-list > li {
+    background-color: rgba(193, 180, 148, 0);
+    color: rgba(193, 180, 148, 1);
+    border: rgba(193, 180, 148, 0.9) 1.5px solid;
+    width: 90px;
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+  }
+
+  .tab-list > li > span {
+    padding-bottom: 2px;
+  }
+
+  .tab-list > .active {
+    background-color: rgba(193, 180, 148, 1);
+    color: #FFFF;
+  }
+
+  .tab-list > li:nth-child(1) {
+    list-style-image: url('assets/images/images.png');
+  }
+
+  .tab-list > li:nth-child(2) {
+    list-style-image: url('assets/images/360.png');
+  }
+
+  .tab-list > li:nth-child(3) {
+    list-style-image: url('assets/images/3D.png');
+  }
+
+  .text-section {
+    background-color: #FFFF;
+    padding: 20px;
+  }
+
+  .prod-img {
+    height: 500px;
+  }
+
+  .prod-name {
+    font-weight: bold;
+    color: #C1B494;
+    margin-top: 5px;
+  }
+
+  .prod-intro {
+    height: 400px;
+    overflow-y: scroll;
+    margin-bottom: 0px;
+  }
+
+  .prod-intro::-webkit-scrollbar {
+    display: none;
+  }
+}
